@@ -14,7 +14,7 @@ class RemoteDataSource implements DataSource {
     // TODO: implement loadData
     print("Load remote");
 
-    final url = "https://thantrieu.com/resources/braniumapis/123/songs.json";
+    final url = "https://thantrieu.com/resources/braniumapis/songs.json";
     final uri = Uri.parse(url);
     final response = await http.get(uri);
     if (response.statusCode == 200) {
